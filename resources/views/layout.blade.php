@@ -101,6 +101,7 @@
             </div>
         </div>
         @yield('content')
+    </div>
         <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
         <script src="{{ asset('js/feather.min.js') }}"></script>
         <script src="{{ asset('js/jquery.slimscroll.min.js') }}"></script>
@@ -116,7 +117,6 @@
         <script src="{{ asset('plugins/flot/jquery.flot.pie.js') }}"></script>
         <script src="{{ asset('plugins/flot/chart-data.js') }}"></script>
         <script src="{{ asset('js/script.js') }}"></script>
-    </div>
     <script>
         async function printReport() {
             const { jsPDF } = window.jspdf;
