@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+      <meta name="description" content="POS - Bootstrap Admin Template">
+      <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern,  html5, responsive">
+      <meta name="author" content="Dreamguys - Bootstrap Admin Template">
+      <meta name="robots" content="noindex, nofollow">
+      <title>MG Mini Mart</title>
+      <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/resources/css/animate.css">
+      <link rel="stylesheet" href="/resources/plugins/select2/css/select2.min.css">
+      <link rel="stylesheet" href="/resources/css/bootstrap-datetimepicker.min.css">
+      <link rel="stylesheet" href="/resources/css/dataTables.bootstrap4.min.css">
+      <link rel="stylesheet" href="/resources/plugins/fontawesome/css/fontawesome.min.css">
+      <link rel="stylesheet" href="/resources/plugins/fontawesome/css/all.min.css">
+      <link rel="stylesheet" href="/resources/css/style.css">>
+   </head>
+   <body>
+      <div class="main-wrapper">
+         <div class="header">
+            <div class="header-left active">
+               <a href="index.html" class="logo">
+               <img src="/resources/img/icons/MGMart.png" alt="">
+               </a>
+               <a href="index.html" class="logo-small">
+               <img src="/resources/img/icons/MGMart.png" alt="">
+               </a>
+            </div>
+         </div>
+         <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+               <div id="sidebar-menu" class="sidebar-menu">
+                  <ul>
+                    <li class="active">
+                     <a href="sales-transaction.html">
+                        <img src="/resources/img/icons/dashboard.svg" alt="img">
+                        <span> Sales Transaction</span>
+                     </a>
+                     </li>
+                     <li class="">
+                        <a href="sales-return.html">
+                           <img src="/resources/img/icons/people-outline.svg" alt="img">
+                           <span> Sales Return</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="page-wrapper">
+            <div class="content">
+               <div class="page-header">
+                  <div class="card">
+                     <div class="card-body">
+                         <div class="row">
+                             <div class="d-flex justify-content-between">
+                                 <!-- Search Set -->
+                                    <div class="search-set">
+                                       <div class="search-path">
+                                          <a class="btn btn-filter" id="filter_search">
+                                          <img src="/resources/img/icons/search-whites.svg" alt="img">
+                                          <span><img src="/resources/img/icons/closes.svg" alt="img"></span>
+                                          </a>
+                                       </div>
+                                       <div class="search-input">
+                                          <a class="btn btn-searchset"><img src="/resources/img/icons/search-white.svg" alt="img"></a>
+                                       </div>
+                                    </div>
+                                 <!-- New Transaction Button -->
+                                 <div class="ml-auto">
+                                     <button type="button" class="btn btn-primary">+ New Transaction</button>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+               </div>
+               
+               <div class="card">
+                  <div class="card-body">
+                     <div class="table-responsive">
+                        <table class="table table-bordered mt-3">
+                           <thead>
+                              <tr>
+                                 <th>Item No.</th>
+                                 <th>SKU</th>
+                                 <th>Product Name</th>
+                                 <th>Description</th>
+                                 <th>Barcode</th>
+                                 <th>Qty.</th>
+                                 <th>Selling Price</th>
+                                 <th>Sub-Total</th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>01</td>
+                                 <td>KOP-BLA-TWPK-08</td>
+                                 <td>Kopiko Blanca Twin Pack</td>
+                                 <td>3in1 Coffee</td>
+                                 <td>7913265485162</td>
+                                 <td>8</td>
+                                 <td>P 20.00</td>
+                                 <td>P 160.00</td>
+                              </tr>
+                              <tr>
+                                 <td>01</td>
+                                 <td>KOP-BLA-TWPK-08</td>
+                                 <td>Kopiko Blanca Twin Pack</td>
+                                 <td>3in1 Coffee</td>
+                                 <td>7913265485162</td>
+                                 <td>8</td>
+                                 <td>P 20.00</td>
+                                 <td>P 160.00</td>
+                              </tr>
+                              <tr>
+                                 <td>01</td>
+                                 <td>KOP-BLA-TWPK-08</td>
+                                 <td>Kopiko Blanca Twin Pack</td>
+                                 <td>3in1 Coffee</td>
+                                 <td>7913265485162</td>
+                                 <td>8</td>
+                                 <td>P 20.00</td>
+                                 <td>P 160.00</td>
+                              </tr>
+                              
+                           </tbody>
+                        </table>
+                        
+                     </div>
+                     
+                  </div>
+                  <div class="row mt-4">
+                     <div class="col-md-4">
+                         <div class="form-group">
+                             <label>Sub-Total</label>
+                             <input type="text" class="form-control" value="P 0.00" readonly>
+                         </div>
+                         <div class="form-group">
+                             <label>Discount</label>
+                             <select class="form-control">
+                                 <option>Type of Discount</option>
+                             </select>
+                         </div>
+                         <div class="form-group">
+                             <label>VAT</label>
+                             <input type="text" class="form-control" value="12%" readonly>
+                         </div>
+                         <div class="form-group">
+                             <label>Total</label>
+                             <input type="text" class="form-control" value="P 0.00" readonly>
+                         </div>
+                     </div>
+                        <div class="col-md-4">
+                           <div class="form-group">
+                              <label>Amount Tender</label>
+                              <input type="text" class="form-control" value="P 0.00">
+                        </div>
+                        <div class="form-group">
+                              <label>Change</label>
+                              <input type="text" class="form-control" value="P 0.00" readonly>
+                        </div>
+                        </div>
+                     <div class="col-md-4 text-right">
+                         <div class="mb-3">
+                             <span>Tran. No. 123-24155436-319</span>
+                         </div>
+                         <div class="btn-group">
+                             <button class="btn btn-secondary">Void</button>
+                             <button class="btn btn-primary">Print</button>
+                         </div>
+                     </div>
+                 </div>
+     
+                 <div class="footer mt-5">
+                     <div class="date-time">
+                         <p>Date & Time</p>
+                         <p>04-17-2024 04:15PM</p>
+                     </div>
+                 </div>
+               </div>
+            </div>
+         </div>
+   
+      </div>
+      <script src="/resources/js/jquery-3.6.0.min.js"></script>
+      <script src="/resources/js/feather.min.js"></script>
+      <script src="/resources/js/jquery.slimscroll.min.js"></script>
+      <script src="/resources/js/jquery.dataTables.min.js"></script>
+      <script src="/resources/js/dataTables.bootstrap4.min.js"></script>
+      <script src="/resources/js/bootstrap.bundle.min.js"></script>
+      <script src="/resources/plugins/select2/js/select2.min.js"></script>
+      <script src="/resources/js/moment.min.js"></script>
+      <script src="/resources/js/bootstrap-datetimepicker.min.js"></script>
+      <script src="/resources/plugins/sweetalert/sweetalert2.all.min.js"></script>
+      <script src="/resources/plugins/sweetalert/sweetalerts.min.js"></script>
+      <script src="/resources/js/script.js"></script>
+      <script>
+         function launchModal() {
+             $('#exampleModal').modal('show');
+         }
+      </script>
+   </body>
+</html>
