@@ -52,34 +52,28 @@
          <div class="page-wrapper">
             <div class="content">
                <div class="page-header">
-                  <div class="card">
-                     <div class="card-body">
-                         <div class="row">
-                             <div class="d-flex justify-content-between">
-                                 <!-- Search Set -->
-                                    <div class="search-set">
-                                       <div class="search-path">
-                                          <a class="btn btn-filter" id="filter_search">
-                                          <img src="/public/img/icons/search-whites.svg" alt="img">
-                                          <span><img src="/public/img/icons/closes.svg" alt="img"></span>
-                                          </a>
-                                       </div>
-                                       <div class="search-input">
-                                          <a class="btn btn-searchset"><img src="/public/img/icons/search-white.svg" alt="img"></a>
-                                       </div>
-                                    </div>
-                                 <!-- New Transaction Button -->
-                                 <div class="ml-auto">
-                                     <button type="button" class="btn btn-primary">+ New Transaction</button>
-                                 </div>
-                             </div>
-                         </div>
+                  <div class="page-title">
+                     <h2>Sales Transaction</h2>
+                  </div>
+
                      </div>
-                 </div>
-               </div>
                
                <div class="card">
                   <div class="card-body">
+                     <div class="row">
+                        <div class="d-flex justify-content-between">
+                            <!-- Search -->
+                              <div type="button" class="page-btn">
+                                 <a href="#" data-bs-toggle="modal" data-bs-target="#searchItemModal">
+                                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Search Item</button>
+                                 </a>
+                              </div>
+                            <!-- New Transaction Button -->
+                            <div class="ml-auto">
+                                <button type="button" class="btn btn-primary">+ New Transaction</button>
+                            </div>
+                        </div>
+                    </div>
                      <div class="table-responsive">
                         <table class="table table-bordered mt-3">
                            <thead>
@@ -125,66 +119,206 @@
                                  <td>P 20.00</td>
                                  <td>P 160.00</td>
                               </tr>
-                              
                            </tbody>
                         </table>
-                        
                      </div>
-                     
                   </div>
-                  <div class="row mt-4">
-                     <div class="col-md-4">
-                         <div class="form-group">
-                             <label>Sub-Total</label>
-                             <input type="text" class="form-control" value="P 0.00" readonly>
-                         </div>
-                         <div class="form-group">
-                             <label>Discount</label>
-                             <select class="form-control">
-                                 <option>Type of Discount</option>
-                             </select>
-                         </div>
-                         <div class="form-group">
-                             <label>VAT</label>
-                             <input type="text" class="form-control" value="12%" readonly>
-                         </div>
-                         <div class="form-group">
-                             <label>Total</label>
-                             <input type="text" class="form-control" value="P 0.00" readonly>
-                         </div>
-                     </div>
+               </div>
+               <div class="card">
+                  <div class="card-body">
+                     <div class="row mt-4">
                         <div class="col-md-4">
                            <div class="form-group">
-                              <label>Amount Tender</label>
-                              <input type="text" class="form-control" value="P 0.00">
-                        </div>
-                        <div class="form-group">
-                              <label>Change</label>
+                              <label>Sub-Total</label>
                               <input type="text" class="form-control" value="P 0.00" readonly>
+                           </div>
+                           <div class="form-group">
+                              <label>Discount</label>
+                              <select class="form-control">
+                                    <option>Type of Discount</option>
+                              </select>
+                           </div>
+                           <div class="form-group">
+                              <label>VAT</label>
+                              <input type="text" class="form-control" value="12%" readonly>
+                           </div>
+                           <div class="form-group">
+                              <label>Total</label>
+                              <input type="text" class="form-control" value="P 0.00" readonly>
+                           </div>
                         </div>
+                           <div class="col-md-4">
+                              <div class="form-group">
+                                 <label>Amount Tender</label>
+                                 <input type="text" class="form-control" value="P 0.00">
+                           </div>
+                           <div class="form-group">
+                                 <label>Change</label>
+                                 <input type="text" class="form-control" value="P 0.00" readonly>
+                           </div>
+                           </div>
+                        <div class="col-md-4 text-right">
+                           <div class="mb-3">
+                              <span>Tran. No. 123-24155436-319</span>
+                           </div>
+                           <div class="btn-group">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Void</button>
+                           </div>
+                           <div class="btn-group">
+                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Print</button>
+                           </div>
                         </div>
-                     <div class="col-md-4 text-right">
-                         <div class="mb-3">
-                             <span>Tran. No. 123-24155436-319</span>
-                         </div>
-                         <div class="btn-group">
-                             <button class="btn btn-secondary">Void</button>
-                             <button class="btn btn-primary">Print</button>
-                         </div>
-                     </div>
-                 </div>
-     
-                 <div class="footer mt-5">
-                     <div class="date-time">
-                         <p>Date & Time</p>
-                         <p>04-17-2024 04:15PM</p>
-                     </div>
-                 </div>
+                  </div>
+      
+                  <div class="footer mt-5">
+                        <div class="date-time">
+                           <p>Date & Time</p>
+                           <p>04-17-2024 04:15PM</p>
+                        </div>
+                  </div>
+                  </div>
                </div>
             </div>
          </div>
-   
       </div>
+      <!-- vatModal -->
+      <div class="modal fade" id="searchItemModal" tabindex="-1" aria-labelledby="searchItemModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-xl">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="searchItemModalLabel">Search Items</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="row w-100">
+               <div class="table-responsive">
+                     
+                    
+                     <table class="table  datanew">
+                        <thead>
+                           <tr>
+                              
+                              <th>Item ID</th>
+                              <th>SKU</th>
+                              <th>Item Name</th>
+                              <th>Description</th>
+                              <th>Barcode</th>
+                              <th>Category</th>
+                              <th>Unit Price</th>
+                              <th>Selling Price</th>
+                              <th>Date Received</th>
+                              <th>Crititcal Level</th>
+                              <th>Select</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>001501</td>
+                              <td>NA-ITJ-25g</td>
+                              <td>Nestea Apple</td>
+                              <td>Iced Tea Juice</td>
+                              <td>12345678910</td>
+                              <td>Beverages</td>
+                              <td>P 25.00</td>
+                              <td>P 30.00</td>
+                              <td>15/04/24</td>
+                              <td>10</td>
+                              <td>
+                                 <a class="me-3" onclick="launchModal()" >
+                                 <img src="/public/img/icons/edit.svg" alt="img">
+                                 </a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td>001501</td>
+                              <td>NA-ITJ-25g</td>
+                              <td>Nestea Apple</td>
+                              <td>Iced Tea Juice</td>
+                              <td>12345678910</td>
+                              <td>Beverages</td>
+                              <td>P 25.00</td>
+                              <td>P 30.00</td>
+                              <td>15/04/24</td>
+                              <td>10</td>
+                              <td>
+                                 <a class="me-3" onclick="launchModal()" >
+                                 <img src="/public/img/icons/edit.svg" alt="img">
+                                 </a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td>001501</td>
+                              <td>NA-ITJ-25g</td>
+                              <td>Nestea Apple</td>
+                              <td>Iced Tea Juice</td>
+                              <td>12345678910</td>
+                              <td>Beverages</td>
+                              <td>P 25.00</td>
+                              <td>P 30.00</td>
+                              <td>15/04/24</td>
+                              <td>10</td>
+                              <td>
+                                 <a class="me-3" onclick="launchModal()" >
+                                 <img src="/public/img/icons/edit.svg" alt="img">
+                                 </a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td>001501</td>
+                              <td>NA-ITJ-25g</td>
+                              <td>Nestea Apple</td>
+                              <td>Iced Tea Juice</td>
+                              <td>12345678910</td>
+                              <td>Beverages</td>
+                              <td>P 25.00</td>
+                              <td>P 30.00</td>
+                              <td>15/04/24</td>
+                              <td>10</td>
+                              <td>
+                                 <a class="me-3" onclick="launchModal()" >
+                                 <img src="/public/img/icons/edit.svg" alt="img">
+                                 </a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td>001501</td>
+                              <td>NA-ITJ-25g</td>
+                              <td>Nestea Apple</td>
+                              <td>Iced Tea Juice</td>
+                              <td>12345678910</td>
+                              <td>Beverages</td>
+                              <td>P 25.00</td>
+                              <td>P 30.00</td>
+                              <td>15/04/24</td>
+                              <td>10</td>
+                              <td>
+                                 <a class="me-3" onclick="launchModal()" >
+                                 <img src="/public/img/icons/edit.svg" alt="img">
+                                 </a>
+                                 </td>
+                           </tr>
+                           
+                           
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+               
+            </div>
+            <div class="modal-footer">
+               <div class="col-lg-6 col-sm-6 col-12">
+                  <div class="form-group">
+                      <label>Quantity</label>
+                      <input type="text" placeholder="Enter Quantity" class="form-control">
+                  </div>
+              </div>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Add Item</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
       <script src="/public/js/jquery-3.6.0.min.js"></script>
       <script src="/public/js/feather.min.js"></script>
       <script src="/public/js/jquery.slimscroll.min.js"></script>
