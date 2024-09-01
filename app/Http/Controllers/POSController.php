@@ -78,4 +78,8 @@ class POSController extends Controller
     function transaction_history_report(){
         return view('transaction_history_report');
     }
+
+    function userInformation(){
+        return view('user_account');
+    }
 }

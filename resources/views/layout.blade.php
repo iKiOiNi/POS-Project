@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <meta name="description" content="POS - Bootstrap Admin Template">
-    <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, html5, responsive">
+    <meta name="keywords"
+        content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, html5, responsive">
     <meta name="author" content="Dreamguys - Bootstrap Admin Template">
     <meta name="robots" content="noindex, nofollow">
     <title>MG Mini Mart</title>
@@ -14,7 +16,10 @@
     <link rel="stylesheet" href="{{ asset('plugins/fontawesome/css/fontawesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/fontawesome/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    @livewireStyles
+
 </head>
+
 <body>
     <div class="main-wrapper">
         <div class="header">
@@ -44,7 +49,8 @@
                             </a>
                         </li>
                         <li class="submenu">
-                            <a href="#" data-bs-toggle="collapse" data-bs-target="#supplierSubmenu" aria-expanded="false" aria-controls="supplierSubmenu">
+                            <a href="#" data-bs-toggle="collapse" data-bs-target="#supplierSubmenu"
+                                aria-expanded="false" aria-controls="supplierSubmenu">
                                 <img src="{{ asset('img/icons/shopping-cart-outline.svg') }}" alt="img">
                                 <span> Supplier</span>
                                 <span class="menu-arrow"></span>
@@ -62,7 +68,8 @@
                             </a>
                         </li>
                         <li class="submenu">
-                            <a href="#" data-bs-toggle="collapse" data-bs-target="#inventorySubmenu" aria-expanded="false" aria-controls="inventorySubmenu">
+                            <a href="#" data-bs-toggle="collapse" data-bs-target="#inventorySubmenu"
+                                aria-expanded="false" aria-controls="inventorySubmenu">
                                 <img src="{{ asset('img/icons/inventory.svg') }}" alt="img">
                                 <span> Inventory Management</span>
                                 <span class="menu-arrow"></span>
@@ -79,7 +86,8 @@
                             </a>
                         </li>
                         <li class="submenu">
-                            <a href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#reportsSubmenu" aria-expanded="false" aria-controls="reportsSubmenu">
+                            <a href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#reportsSubmenu"
+                                aria-expanded="false" aria-controls="reportsSubmenu">
                                 <img src="{{ asset('img/icons/product.svg') }}" alt="img">
                                 <span> Reports</span>
                                 <span class="menu-arrow"></span>
@@ -102,24 +110,27 @@
         </div>
         @yield('content')
     </div>
-        <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
-        <script src="{{ asset('js/feather.min.js') }}"></script>
-        <script src="{{ asset('js/jquery.slimscroll.min.js') }}"></script>
-        <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
-        <script src="{{ asset('js/dataTables.bootstrap4.min.js') }}"></script>
-        <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-        <script src="{{ asset('plugins/apexchart/apexcharts.min.js') }}"></script>
-        <script src="{{ asset('plugins/apexchart/chart-data.js') }}"></script>
-        <script src="{{ asset('plugins/peity/jquery.peity.min.js') }}"></script>
-        <script src="{{ asset('plugins/peity/chart-data.js') }}"></script>
-        <script src="{{ asset('plugins/flot/jquery.flot.js') }}"></script>
-        <script src="{{ asset('plugins/flot/jquery.flot.fillbetween.js') }}"></script>
-        <script src="{{ asset('plugins/flot/jquery.flot.pie.js') }}"></script>
-        <script src="{{ asset('plugins/flot/chart-data.js') }}"></script>
-        <script src="{{ asset('js/script.js') }}"></script>
+    @livewireScripts
+    <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('js/feather.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.slimscroll.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('plugins/apexchart/apexcharts.min.js') }}"></script>
+    <script src="{{ asset('plugins/apexchart/chart-data.js') }}"></script>
+    <script src="{{ asset('plugins/peity/jquery.peity.min.js') }}"></script>
+    <script src="{{ asset('plugins/peity/chart-data.js') }}"></script>
+    <script src="{{ asset('plugins/flot/jquery.flot.js') }}"></script>
+    <script src="{{ asset('plugins/flot/jquery.flot.fillbetween.js') }}"></script>
+    <script src="{{ asset('plugins/flot/jquery.flot.pie.js') }}"></script>
+    <script src="{{ asset('plugins/flot/chart-data.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
     <script>
         async function printReport() {
-            const { jsPDF } = window.jspdf;
+            const {
+                jsPDF
+            } = window.jspdf;
 
             const doc = new jsPDF();
             const salesTable = document.getElementById('salesTable');
@@ -127,10 +138,15 @@
             doc.text('MG Mini Mart Sales Report', 10, 10);
             doc.text('Brgy. Tinongcop, Tantangan, South Cot.', 10, 20);
             doc.text('Manager: Glo-Ann Panes', 10, 30);
-            doc.autoTable({ html: '#salesTable', startY: 40 });
+            doc.autoTable({
+                html: '#salesTable',
+                startY: 40
+            });
 
             doc.save('sales-report.pdf');
         }
     </script>
+
 </body>
+
 </html>

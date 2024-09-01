@@ -1229,11 +1229,7 @@ div#global-loader,
       padding: 5px 7px;
    }
 }
-.btn-primary {
-   color: #fff;
-   background-color: rgba(160, 0, 255) !important;
-   border-color: rgba(160, 0, 255) !important;
-}
+
 .avatar {
    background-color: transparent;
    color: #fff;
@@ -7343,4 +7339,32 @@ span.select2-container.select2-container--default.select2-container--open {
    position: absolute;
    top: 50%;
    right: 10px;
+}
+
+/* Pagination Red Accent */
+.pagination-link-red {
+    color: #dc3545; /* Red color for text */
+    border-color: transparent; /* No border by default */
+}
+
+.pagination-link-red:hover {
+    background-color: #dc3545; /* Red background on hover */
+    color: #fff; /* White text color on hover */
+    border-color: transparent; /* No border on hover */
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #dc3545; /* Red background for active page */
+    border-color: #dc3545; /* Red border for active page */
+    color: #fff; /* White text color for active page */
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #6c757d; /* Gray color for disabled state */
+    background-color: #ffffff; /* White background for disabled state */
+    border-color: transparent; /* No border for disabled state */
+}
+
+.pagination .page-item {
+    border: 1px solid transparent; /* Default border is transparent */
 }

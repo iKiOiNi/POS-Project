@@ -5,6 +5,7 @@ use App\Http\Controllers\POSController;
 
 Route::get('/', [POSController::class, 'index']);
 Route::get('/user', [POSController::class, 'user']);
+Route::get('/user_account', [POSController::class, 'userInformation'])->name('user_account');
 Route::get('/supplier', [POSController::class, 'supplier']);
 Route::get('/order', [POSController::class, 'order_supplies']);
 Route::get('/delivery', [POSController::class, 'delivery']);
