@@ -63,7 +63,6 @@
                                  <th>Unit Price</th>
                                  <th>Selling Price</th>
                                  <th>Date Received</th>
-                                 <th>Expiration Date</th>
                                  <th>Crititcal Level</th>
                                  <th>Select</th>
                               </tr>
@@ -79,7 +78,6 @@
                                  <td>P 25.00</td>
                                  <td>P 30.00</td>
                                  <td>15/04/24</td>
-                                 <td>15/04/26</td>
                                  <td>10</td>
                                  <td>
                                     <a class="me-3" onclick="launchModal()" >
@@ -97,7 +95,6 @@
                                  <td>P 25.00</td>
                                  <td>P 30.00</td>
                                  <td>15/04/24</td>
-                                 <td>15/04/26</td>
                                  <td>10</td>
                                  <td>
                                     <a class="me-3" onclick="launchModal()" >
@@ -115,7 +112,6 @@
                                  <td>P 25.00</td>
                                  <td>P 30.00</td>
                                  <td>15/04/24</td>
-                                 <td>15/04/26</td>
                                  <td>10</td>
                                  <td>
                                     <a class="me-3" onclick="launchModal()" >
@@ -133,7 +129,6 @@
                                  <td>P 25.00</td>
                                  <td>P 30.00</td>
                                  <td>15/04/24</td>
-                                 <td>15/04/26</td>
                                  <td>10</td>
                                  <td>
                                     <a class="me-3" onclick="launchModal()" >
@@ -151,7 +146,6 @@
                                  <td>P 25.00</td>
                                  <td>P 30.00</td>
                                  <td>15/04/24</td>
-                                 <td>15/04/26</td>
                                  <td>10</td>
                                  <td>
                                     <a class="me-3" onclick="launchModal()" >
@@ -228,12 +222,6 @@
                         <div class="form-group">
                            <label>Date Received</label>
                            <input type="text" placeholder="Date Received">
-                        </div>
-                     </div>
-                     <div class="col-lg-6 col-sm-6 col-12">
-                        <div class="form-group">
-                           <label>Expiration Date</label>
-                           <input type="text" placeholder="Expiration Date">
                         </div>
                      </div>
                      <div class="col-lg-12 col-sm-6 col-12">
