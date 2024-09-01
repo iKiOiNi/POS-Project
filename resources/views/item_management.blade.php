@@ -72,12 +72,7 @@
                               <tr>
                                  <td>001501</td>
                                  <td>NA-ITJ-25g</td>
-                                 <td class="productimgname">
-                                    <a href="javascript:void(0);" class="product-img">
-                                    <img src="{{asset('img/product/noimage.png')}}" alt="product">
-                                    </a>
-                                    <a href="javascript:void(0);">Nestea Apple</a>
-                                 </td>
+                                 <td>Nestea Apple</td>
                                  <td>Iced Tea Juice</td>
                                  <td>12345678910</td>
                                  <td>Beverages</td>
@@ -95,12 +90,7 @@
                               <tr>
                                  <td>001501</td>
                                  <td>NA-ITJ-25g</td>
-                                 <td class="productimgname">
-                                    <a href="javascript:void(0);" class="product-img">
-                                    <img src="{{asset('img/product/noimage.png')}}" alt="product">
-                                    </a>
-                                    <a href="javascript:void(0);">Nestea Apple</a>
-                                 </td>
+                                 <td>Nestea Apple</td>
                                  <td>Iced Tea Juice</td>
                                  <td>12345678910</td>
                                  <td>Beverages</td>
@@ -118,12 +108,7 @@
                               <tr>
                                  <td>001501</td>
                                  <td>NA-ITJ-25g</td>
-                                 <td class="productimgname">
-                                    <a href="javascript:void(0);" class="product-img">
-                                    <img src="{{asset('img/product/noimage.png')}}" alt="product">
-                                    </a>
-                                    <a href="javascript:void(0);">Nestea Apple</a>
-                                 </td>
+                                 <td>Nestea Apple</td>
                                  <td>Iced Tea Juice</td>
                                  <td>12345678910</td>
                                  <td>Beverages</td>
@@ -141,12 +126,7 @@
                               <tr>
                                  <td>001501</td>
                                  <td>NA-ITJ-25g</td>
-                                 <td class="productimgname">
-                                    <a href="javascript:void(0);" class="product-img">
-                                    <img src="{{asset('img/product/noimage.png')}}" alt="product">
-                                    </a>
-                                    <a href="javascript:void(0);">Nestea Apple</a>
-                                 </td>
+                                 <td>Nestea Apple</td>
                                  <td>Iced Tea Juice</td>
                                  <td>12345678910</td>
                                  <td>Beverages</td>
@@ -164,12 +144,7 @@
                               <tr>
                                  <td>001501</td>
                                  <td>NA-ITJ-25g</td>
-                                 <td class="productimgname">
-                                    <a href="javascript:void(0);" class="product-img">
-                                    <img src="{{asset('img/product/noimage.png')}}" alt="product">
-                                    </a>
-                                    <a href="javascript:void(0);">Nestea Apple</a>
-                                 </td>
+                                 <td>Nestea Apple</td>
                                  <td>Iced Tea Juice</td>
                                  <td>12345678910</td>
                                  <td>Beverages</td>
@@ -309,12 +284,7 @@
                            <tbody>
                               <tr>
                                  <td>001501</td>
-                                 <td class="productimgname">
-                                    <a href="javascript:void(0);" class="product-img">
-                                    <img src="{{asset('img/product/noimage.png')}}" alt="product">
-                                    </a>
-                                    <a href="javascript:void(0);">Nestea Apple</a>
-                                 </td>
+                                 <td>Nestea Apple</td>
                                  <td>Iced Tea Juice</td>
                                  <td>Beverages</td>
                                  <td>P 25.00</td>
@@ -330,12 +300,7 @@
                               </tr>
                               <tr>
                                  <td>001501</td>
-                                 <td class="productimgname">
-                                    <a href="javascript:void(0);" class="product-img">
-                                    <img src="{{asset('img/product/noimage.png')}}" alt="product">
-                                    </a>
-                                    <a href="javascript:void(0);">Nestea Apple</a>
-                                 </td>
+                                 <td>Nestea Apple</td>
                                  <td>Iced Tea Juice</td>
                                  <td>Beverages</td>
                                  <td>P 25.00</td>
@@ -351,12 +316,7 @@
                               </tr>
                               <tr>
                                  <td>001501</td>
-                                 <td class="productimgname">
-                                    <a href="javascript:void(0);" class="product-img">
-                                    <img src="{{asset('img/product/noimage.png')}}" alt="product">
-                                    </a>
-                                    <a href="javascript:void(0);">Nestea Apple</a>
-                                 </td>
+                                 <td>Nestea Apple</td>
                                  <td>Iced Tea Juice</td>
                                  <td>Beverages</td>
                                  <td>P 25.00</td>
@@ -372,12 +332,7 @@
                               </tr>
                               <tr>
                                  <td>001501</td>
-                                 <td class="productimgname">
-                                    <a href="javascript:void(0);" class="product-img">
-                                    <img src="{{asset('img/product/noimage.png')}}" alt="product">
-                                    </a>
-                                    <a href="javascript:void(0);">Nestea Apple</a>
-                                 </td>
+                                 <td>Nestea Apple</td>
                                  <td>Iced Tea Juice</td>
                                  <td>Beverages</td>
                                  <td>P 25.00</td>
@@ -393,12 +348,7 @@
                               </tr>
                               <tr>
                                  <td>001501</td>
-                                 <td class="productimgname">
-                                    <a href="javascript:void(0);" class="product-img">
-                                    <img src="{{asset('img/product/noimage.png')}}" alt="product">
-                                    </a>
-                                    <a href="javascript:void(0);">Nestea Apple</a>
-                                 </td>
+                                 <td>Nestea Apple</td>
                                  <td>Iced Tea Juice</td>
                                  <td>Beverages</td>
                                  <td>P 25.00</td>
