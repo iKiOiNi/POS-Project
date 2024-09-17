@@ -37,7 +37,7 @@
                 <div id="sidebar-menu" class="sidebar-menu">
                     <ul>
                         <li class="">
-                            <a href="/">
+                            <a href="/dashboard">
                                 <img src="{{ asset('img/icons/mg-dashboard.svg') }}" alt="img">
                                 <span> Dashboard</span>
                             </a>
@@ -49,8 +49,7 @@
                             </a>
                         </li>
                         <li class="submenu">
-                            <a href="#" data-bs-toggle="collapse" data-bs-target="#supplierSubmenu"
-                                aria-expanded="false" aria-controls="supplierSubmenu">
+                            <a  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="supplierSubmenu">
                                 <img src="{{ asset('img/icons/shopping-cart-outline.svg') }}" alt="img">
                                 <span> Supplier</span>
                                 <span class="menu-arrow"></span>
@@ -84,6 +83,7 @@
                                 <img src="{{ asset('img/icons/activity_log.svg') }}" alt="img">
                                 <span> Activity Log</span>
                             </a>
+
                         </li>
                         <li class="submenu">
                             <a href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#reportsSubmenu"
@@ -102,8 +102,10 @@
                                 <li><a href="/expiration_report">Expiration Report</a></li>
                                 <li><a href="/sales_return_report">Sales Return Report</a></li>
                                 <li><a href="/transaction_history_report">Transaction History Report</a></li>
+
                             </ul>
                         </li>
+                        <li><a href="{{route('logout')}}"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a></li>
                     </ul>
                 </div>
             </div>

@@ -7,9 +7,14 @@ use App\Models\Employee;
 use Illuminate\Support\Facades\Hash;
 use Livewire\WithFileUploads;
 use Livewire\WithPagination;
+use Livewire\WithoutUrlPagination;
 
 class UserManagementAccount extends Component
 {
+    use WithPagination;
+    use WithFileUploads;
+
+
     public $firstname;
     public $lastname;
     public $middle;
@@ -44,8 +49,6 @@ class UserManagementAccount extends Component
 
     public $search = '';
 
-    use WithFileUploads;
-    use WithPagination;
     public function render()
     {
         return view('livewire.user.user-management-account', [

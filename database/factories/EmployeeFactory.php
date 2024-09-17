@@ -27,7 +27,7 @@ class EmployeeFactory extends Factory
             'gender' => $this->faker->randomElement(['Male', 'Female']),
             'role' => $this->faker->randomElement(['manager', 'cashier']),
             'username' => $this->faker->unique()->userName(),
-            'password' => bcrypt('password123'),
+            'password' => 'password123',
             'status' => $this->faker->randomElement(['active', 'inactive']),
             'created_at' => now(),
         ];
