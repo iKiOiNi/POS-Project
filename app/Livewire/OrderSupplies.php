@@ -6,6 +6,7 @@ use App\Models\Item;
 use App\Models\PurchaseOrder;
 use Livewire\Component;
 use App\Models\Supplier;
+use App\Models\Inventory;
 
 class OrderSupplies extends Component
 {
@@ -38,12 +39,13 @@ class OrderSupplies extends Component
             'suppliers' => Supplier::all(),
             'items' => Item::all(),
             'orders' => PurchaseOrder::where('status', 'Pending')
-                            ->orderBy('purchase_order_id', 'desc')
-                            ->get()
+                ->orderBy('purchase_order_id', 'desc')
+                ->get()
         ]);
     }
 
-    public function createOrder(){
+    public function createOrder()
+    {
         // TODO: Save order to database
 
         $this->validate(
@@ -181,7 +183,6 @@ class OrderSupplies extends Component
         $order = PurchaseOrder::find($orderId);
 
         $this->orderDetails = $order->items;
-
     }
 
     public function completeOrder($orderId)
@@ -189,6 +190,16 @@ class OrderSupplies extends Component
         $order = PurchaseOrder::find($orderId);
         $order->status = 'Completed';
         $order->delivery_date = now();
+
+        foreach ($order->items as $item) {
+
+            $inventory = new Inventory();
+            $inventory->itemID = $item->itemID;
+            $inventory->qtyonhand = $item->quantity;
+            $inventory->date_received = now();
+            $inventory->expiry_date = now()->addMonths(6);
+            $inventory->save();
+        }
         $order->save();
         session()->flash('message-status', 'Order has been completed successfully');
     }

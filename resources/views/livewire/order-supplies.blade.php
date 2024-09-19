@@ -83,7 +83,7 @@
                                         Details</button></td>
                                 <td>
                                     <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        <button class="btn btn-primary dropdown-toggle" type="button"
                                             id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                             Update Status
                                         </button>

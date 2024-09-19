@@ -52,31 +52,15 @@
                                     <td>{{ $delivery->purchase_order_id }}</td>
                                     <td>{{ $delivery->supplier->CompanyName }}</td>
                                     <td>{{ $delivery->supplier->ContactPerson }}</td>
-                                    <td>{{ $delivery->contact_number }}</td>
-                                    <td>{{ $delivery->date_delivered }}</td>
-                                    <td>{{ $delivery->address }}</td>
-                                    <td>{{ $delivery->total_item }}</td>
+                                    <td>{{ $delivery->supplier->ContactNumber }}</td>
+                                    <td>{{ $delivery->delivery_date }}</td>
+                                    <td>{{ $delivery->supplier->Address }}</td>
+                                    <td>{{ $delivery->quantity }}</td>
                                     <td>
                                         <span class="">{{ $delivery->status }}</span>
                                     </td>
 
                                 @endforeach
-                                <tr>
-                                    <td>001</td>
-                                    <td>KCC Mall of Marbel</td>
-                                    <td>Mr. Adam</td>
-                                    <td>09366958452</td>
-                                    <td>15/04/24</td>
-                                    <td>Koronadal City South Cotabato</td>
-
-                                    </td>
-                                    <td>25</td>
-                                    <td>
-                                        <span class="">Complete</span>
-                                    </td>
-
-                                </tr>
-
 
 
                             </tbody>
